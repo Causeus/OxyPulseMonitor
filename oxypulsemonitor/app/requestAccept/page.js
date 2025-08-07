@@ -30,7 +30,7 @@ const RequestAcceptPage = () => {
 
     fetchPatients();
     const interval = setInterval(() => {
-      fetchData();
+      fetchPatients();
     }, 5000); 
   
     return () => clearInterval(interval);
@@ -270,3 +270,4 @@ const RequestAcceptPage = () => {
 };
 
 export default withAuth(RequestAcceptPage, 'dokter');
+
