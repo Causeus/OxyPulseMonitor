@@ -35,7 +35,7 @@ const PatientListPage = () => {
 
     fetchPatients();
     const interval = setInterval(() => {
-      fetchData();
+      fetchPatients();
     }, 5000); 
   
     return () => clearInterval(interval);
@@ -335,5 +335,6 @@ const PatientListPage = () => {
     </>
   );
 };
+
 
 export default PatientListPage;
