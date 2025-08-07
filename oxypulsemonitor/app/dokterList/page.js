@@ -34,7 +34,7 @@ const DoctorListPage = () => {
 
     fetchDoctors();
     const interval = setInterval(() => {
-      fetchData();
+      fetchDoctors();
     }, 5000); 
   
     return () => clearInterval(interval);
@@ -372,3 +372,4 @@ const DoctorListPage = () => {
 };
 
 export default DoctorListPage;
+
