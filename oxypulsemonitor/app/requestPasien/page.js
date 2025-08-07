@@ -35,7 +35,7 @@ const RequestPasien = () => {
 
     fetchRequests();
     const interval = setInterval(() => {
-      fetchData();
+      fetchRequests();
     }, 5000); 
   
     return () => clearInterval(interval);
@@ -351,3 +351,4 @@ const RequestPasien = () => {
 };
 
 export default RequestPasien;
+
