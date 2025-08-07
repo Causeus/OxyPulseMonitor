@@ -35,7 +35,7 @@ const DataKesehatanDokterPage = () => {
     if (patientId) {
       fetchHealthData();
       const interval = setInterval(() => {
-        fetchData();
+        fetchHealthData();
       }, 5000); 
     
       return () => clearInterval(interval);
@@ -424,5 +424,6 @@ const DataKesehatanDokterPage = () => {
     </>
   );
 };
+
 
 export default withAuth(DataKesehatanDokterPage, 'dokter'); 
