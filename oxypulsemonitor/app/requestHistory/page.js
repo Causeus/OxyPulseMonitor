@@ -30,7 +30,7 @@ const RequestHistoryPage = () => {
 
     fetchRequests();
     const interval = setInterval(() => {
-      fetchData();
+      fetchRequests();
     }, 5000); 
   
     return () => clearInterval(interval);
@@ -275,3 +275,4 @@ const RequestHistoryPage = () => {
 };
 
 export default withAuth(RequestHistoryPage, 'dokter');
+
